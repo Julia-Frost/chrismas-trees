@@ -144,4 +144,50 @@ p {
   color: #ffffff;
   background-color: #e5ab39;
   border-radius: 6px;
+}
+
+.hero {
+  background-color: #005844;
+}
+
+.hero__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero__title {
+  font-family: Cormorant, serif;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+
+.hero__article {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.hero__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  background-color: transparent;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
