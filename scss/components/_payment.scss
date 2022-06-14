@@ -1,0 +1,45 @@
+.payment {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $third-color;
+}
+
+.payment__title {
+  margin-bottom: 20px;
+  font-family: 'Cormorant';
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.payment__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.payment__item {
+  max-width: 207px;
+}
+.payment__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.payment__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $second-color;
+  height: 73px;
+}
+
+.payment__text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.payment__article {
+  font-size: 12px;
+}
