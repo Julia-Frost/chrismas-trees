@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+  //  Оформлення секції Хедер
+  .header__announce {
+    font-size: 14px;
+  }
+  .header__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__menu {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo {
+    width: 115px;
+    height: 55px;
+  }
+
+  .header__navigation {
+    display: none;
+    top: 75px;
+    padding: 30px 39px;
+  }
+  .navigation__list {
+    gap: 35px;
+  }
+  .navigation__button {
+    font-size: 14px;
+  }
+  .button-yellow {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  //   Оформлення секції Герой
+  .hero__content {
+    display: flex;
+  }
+  .hero__image {
+    width: 309px;
+    height: 337px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__title {
+    font-family: Cormorant, serif;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+  .hero__wrap {
+    padding: 30px 50px;
+  }
+
+  .hero__article {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero__button {
+    font-size: 14px;
+  }
+
+  //   Оформлення секції Особливості
+}
