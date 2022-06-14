@@ -190,4 +190,60 @@ p {
   font-size: 12px;
   background-color: transparent;
   color: #ffffff;
+}
+
+.bauble__image {
+  width: 41px;
+  height: 49px;
+  margin-bottom: 6px;
+  -webkit-filter: drop-shadow(4px 7px 20px #003227);
+          filter: drop-shadow(4px 7px 20px #003227);
+}
+
+.features {
+  background-color: #c0b487;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: calc(50% - 25px);
+      flex-basis: calc(50% - 25px);
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.features__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.features__article {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */

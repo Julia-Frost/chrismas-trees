@@ -36,3 +36,9 @@
   background-color: transparent;
   color: $second-color;
 }
+.bauble__image {
+  width: 41px;
+  height: 49px;
+  margin-bottom: 6px;
+  filter: drop-shadow(4px 7px 20px #003227);
+}
