@@ -1,0 +1,52 @@
+.trees__item {
+  padding: 30px 10px;
+}
+
+.trees__item:first-child {
+  background-color: $green-second;
+}
+
+.trees__item:nth-child(2) {
+  background-color: $green-first;
+}
+.trees__item:last-child {
+  background-color: $green-third;
+}
+.trees__image {
+  border-radius: 16px;
+}
+
+.trees__wrap {
+  margin-top: 15px;
+}
+.trees__title {
+  margin-bottom: 10px;
+
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+.trees__article {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.trees__description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.trees__button {
+  margin-right: 20px;
+  padding: 5px 14px;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: $third-color;
+  border-radius: 6px;
+  border: 1px solid $third-color;
+}
+.trees__button-transparent {
+  background-color: transparent;
+  border: 1px solid $third-color;
+}

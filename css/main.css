@@ -27,6 +27,7 @@ a {
 
 button {
   font-family: inherit;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -198,6 +199,65 @@ p {
   margin-bottom: 6px;
   -webkit-filter: drop-shadow(4px 7px 20px #003227);
           filter: drop-shadow(4px 7px 20px #003227);
+}
+
+.trees__item {
+  padding: 30px 10px;
+}
+
+.trees__item:first-child {
+  background-color: #006e55;
+}
+
+.trees__item:nth-child(2) {
+  background-color: #00654e;
+}
+
+.trees__item:last-child {
+  background-color: #005844;
+}
+
+.trees__image {
+  border-radius: 16px;
+}
+
+.trees__wrap {
+  margin-top: 15px;
+}
+
+.trees__title {
+  margin-bottom: 10px;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.trees__article {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.trees__description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.trees__button {
+  margin-right: 20px;
+  padding: 5px 14px;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #c0b487;
+  border-radius: 6px;
+  border: 1px solid #c0b487;
+}
+
+.trees__button-transparent {
+  background-color: transparent;
+  border: 1px solid #c0b487;
 }
 
 .features {
