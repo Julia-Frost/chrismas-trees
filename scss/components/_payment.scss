@@ -43,3 +43,23 @@
 .payment__article {
   font-size: 12px;
 }
+
+.payment__icon:not(:last-child) {
+  margin-right: 11px;
+}
+.payment__icon-visa {
+  width: 46px;
+  height: 15;
+}
+.payment__icon-mastercard {
+  width: 24px;
+  height: 19px;
+}
+.payment__icon-logo {
+  width: 73px;
+  height: 35px;
+}
+.payment__icon-bank {
+  width: 35px;
+  height: 35px;
+}

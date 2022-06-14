@@ -66,4 +66,143 @@
   }
 
   //   Оформлення секції Особливості
+  .features {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .features__list {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .features__item {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  //   Оформлення секції Дерева
+
+  .trees__item {
+    display: flex;
+    align-items: center;
+    padding: 50px 39px;
+    gap: 30px;
+  }
+
+  .trees__wrap {
+    margin-top: 0;
+  }
+  .trees__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .trees__article {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .trees__description {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  .trees__button {
+    margin-right: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  //   Оформлення секції Оплати
+  .payment {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .payment__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .payment__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .payment__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .payment__text {
+    font-size: 16px;
+  }
+  .payment__article {
+    font-size: 14px;
+  }
+
+  .payment__icon-logo {
+    width: 79px;
+    height: 38px;
+  }
+  .payment__icon-bank {
+    width: 35px;
+    height: 35px;
+  }
+
+  //   Оформлення секції Оплати
+
+  .footer {
+    padding-top: 57px;
+    padding-bottom: 40px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 41px;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .address__link {
+    font-size: 16px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .social__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .personal__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  .personal__article {
+    font-size: 14px;
+  }
+
+  .policy__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  .policy__link {
+    display: block;
+    font-size: 14px;
+  }
+  //   ???????????????
+  .design__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  .design__article {
+    font-size: 14px;
+  }
 }

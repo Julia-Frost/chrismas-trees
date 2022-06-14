@@ -3,6 +3,9 @@
   padding-bottom: 24px;
   background-color: $first-color;
 }
+.footer__list:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .footer__item:not(:last-child) {
   margin-bottom: 30px;
