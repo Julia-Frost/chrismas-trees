@@ -1,0 +1,198 @@
+@media (min-width: 1024px) {
+  //  Оформлення секції Хедер
+  .header__announce {
+    font-size: 16px;
+  }
+  .header__content {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  //   .logo {
+  //     width: 115px;
+  //     height: 55px;
+  //   }
+
+  //   .header__navigation {
+  //     top: 75px;
+  //     padding: 30px 39px;
+  //   }
+  //   .navigation__list {
+  //     gap: 35px;
+  //   }
+  //   .navigation__button {
+  //     font-size: 14px;
+  //   }
+  //   .button-yellow {
+  //     font-size: 14px;
+  //     padding: 8px 20px;
+  //   }
+
+  //   //   Оформлення секції Герой
+  //   .hero__content {
+  //     display: flex;
+  //   }
+  //   .hero__image {
+  //     width: 309px;
+  //     height: 337px;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
+
+  //   .hero__title {
+  //     font-family: Cormorant, serif;
+  //     font-size: 40px;
+  //     line-height: 1;
+  //     letter-spacing: 0.01em;
+  //     margin-bottom: 20px;
+  //   }
+  //   .hero__wrap {
+  //     padding: 30px 50px;
+  //   }
+
+  //   .hero__article {
+  //     font-size: 16px;
+  //     margin-bottom: 20px;
+  //   }
+
+  //   .hero__button {
+  //     font-size: 14px;
+  //   }
+
+  //   //   Оформлення секції Особливості
+  //   .features {
+  //     padding-top: 40px;
+  //     padding-bottom: 40px;
+  //   }
+  //   .features__list {
+  //     flex-wrap: nowrap;
+  //     margin-top: 0;
+  //     margin-left: 0;
+  //   }
+  //   .features__item {
+  //     margin-top: 0;
+  //     margin-left: 0;
+  //   }
+  //   .features__item:not(:last-child) {
+  //     margin-right: 14px;
+  //   }
+
+  //   //   Оформлення секції Дерева
+
+  //   .trees__item {
+  //     display: flex;
+  //     flex-direction: row-reverse;
+  //     align-items: center;
+  //     padding: 50px 39px;
+  //     gap: 30px;
+  //   }
+  //   .trees__item:nth-child(2) {
+  //     flex-direction: row;
+  //   }
+
+  //   .trees__wrap {
+  //     margin-top: 0;
+  //   }
+  //   .trees__title {
+  //     margin-bottom: 20px;
+  //     font-size: 40px;
+  //   }
+  //   .trees__article {
+  //     margin-bottom: 30px;
+  //     font-size: 14px;
+  //   }
+  //   .trees__description {
+  //     margin-bottom: 40px;
+  //     font-size: 16px;
+  //   }
+  //   .trees__button {
+  //     margin-right: 20px;
+  //     padding: 8px 20px;
+  //     font-size: 14px;
+  //   }
+
+  //   //   Оформлення секції Оплати
+  //   .payment {
+  //     padding-top: 40px;
+  //     padding-bottom: 50px;
+  //   }
+
+  //   .payment__title {
+  //     margin-bottom: 30px;
+  //     font-size: 40px;
+  //   }
+  //   .payment__list {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     align-items: stretch;
+  //   }
+  //   .payment__item:not(:last-child) {
+  //     margin-bottom: 0;
+  //   }
+  //   .payment__text {
+  //     font-size: 16px;
+  //   }
+  //   .payment__article {
+  //     font-size: 14px;
+  //   }
+
+  //   .payment__icon-logo {
+  //     width: 79px;
+  //     height: 38px;
+  //   }
+  //   .payment__icon-bank {
+  //     width: 35px;
+  //     height: 35px;
+  //   }
+
+  //   //   Оформлення секції Футер
+
+  //   .footer {
+  //     padding-top: 57px;
+  //     padding-bottom: 40px;
+  //     font-size: 14px;
+  //   }
+  //   .footer__list {
+  //     display: grid;
+  //     grid-template-columns: 4fr 4fr 4fr;
+  //     gap: 41px 22px;
+  //   }
+
+  //   .footer__item:not(:last-child) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   .footer__item:not(:last-child) {
+  //     margin-bottom: 0;
+  //   }
+  //   .address__link {
+  //     font-size: 16px;
+  //   }
+
+  //   .social__icon {
+  //     width: 26px;
+  //     height: 26px;
+  //   }
+  //   .address__item:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
+  //   .social__item:not(:last-child) {
+  //     margin-right: 10px;
+  //   }
+  //   .personal__item:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
+
+  //   .policy__item:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
+
+  //   .design__item:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
+}

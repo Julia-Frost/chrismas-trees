@@ -22,14 +22,15 @@
 }
 
 .header__menu {
-  display: block;
-  width: 31px;
-  height: 24px;
-}
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 
-.icon__menu {
-}
-.icon__cross {
+  & .icon__cross {
+    display: none;
+  }
 }
 
 .logo {
@@ -38,6 +39,9 @@
 }
 
 .header__navigation {
+  visibility: hidden;
+  pointer-events: none;
+
   position: absolute;
   width: 100%;
   top: 50px;
@@ -48,6 +52,10 @@
   border-radius: 10px;
 }
 
+.header__navigation.is-open {
+  visibility: visible;
+  pointer-events: auto;
+}
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +70,7 @@
 
   font-size: 12px;
   color: $first-color;
+  background-color: transparent;
   border: 1px solid $fourth-color;
   border-radius: 20px;
 }
