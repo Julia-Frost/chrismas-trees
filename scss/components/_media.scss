@@ -87,9 +87,13 @@
 
   .trees__item {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     padding: 50px 39px;
     gap: 30px;
+  }
+  .trees__item:nth-child(2) {
+    flex-direction: row;
   }
 
   .trees__wrap {
@@ -148,61 +152,49 @@
     height: 35px;
   }
 
-  //   Оформлення секції Оплати
+  //   Оформлення секції Футер
 
   .footer {
     padding-top: 57px;
     padding-bottom: 40px;
+    font-size: 14px;
   }
   .footer__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__list:not(:last-child) {
-    margin-bottom: 41px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 41px 22px;
   }
 
   .footer__item:not(:last-child) {
-    margin-right: 24px;
     margin-bottom: 0;
   }
 
-  .address__item:not(:last-child) {
-    margin-bottom: 10px;
+  .footer__item:not(:last-child) {
+    margin-bottom: 0;
   }
-
   .address__link {
     font-size: 16px;
-  }
-
-  .social__item:not(:last-child) {
-    margin-right: 12px;
   }
 
   .social__icon {
     width: 26px;
     height: 26px;
   }
-
-  .personal__item:not(:last-child) {
-    margin-bottom: 13px;
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
   }
-  .personal__article {
-    font-size: 14px;
+  .social__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .personal__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .policy__item:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
-  .policy__link {
-    display: block;
-    font-size: 14px;
-  }
-  //   ???????????????
+
   .design__item:not(:last-child) {
-    margin-bottom: 13px;
-  }
-  .design__article {
-    font-size: 14px;
+    margin-bottom: 10px;
   }
 }

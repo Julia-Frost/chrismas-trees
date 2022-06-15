@@ -2,9 +2,7 @@
   padding-top: 30px;
   padding-bottom: 24px;
   background-color: $first-color;
-}
-.footer__list:not(:last-child) {
-  margin-bottom: 30px;
+  font-size: 12px;
 }
 
 .footer__item:not(:last-child) {
@@ -37,21 +35,11 @@
 .personal__item:not(:last-child) {
   margin-bottom: 10px;
 }
-.personal__article {
-  font-size: 12px;
-}
 
 .policy__item:not(:last-child) {
   margin-bottom: 10px;
 }
-.policy__link {
-  display: block;
-  font-size: 12px;
-}
 
 .design__item:not(:last-child) {
   margin-bottom: 10px;
-}
-.design__article {
-  font-size: 12px;
 }
