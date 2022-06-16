@@ -924,51 +924,40 @@ p {
   }
 
   .footer {
-    padding-top: 57px;
-    padding-bottom: 40px;
-    font-size: 14px;
-  }
-
-  .footer__list {
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    gap: 41px 22px;
-  }
-
-  .footer__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-
-  .footer__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-
-  .address__link {
+    padding-bottom: 58px;
     font-size: 16px;
   }
 
+  .footer__list {
+    gap: 53px 25px;
+  }
+
+  .address__link {
+    font-size: 20px;
+  }
+
   .social__icon {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
   }
 
   .address__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .social__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
   .personal__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .policy__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .design__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
