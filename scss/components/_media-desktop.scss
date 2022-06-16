@@ -12,103 +12,107 @@
     display: none;
   }
 
-  //   .header__navigation {
-  //     top: 75px;
-  //     padding: 30px 39px;
-  //   }
-  //   .navigation__list {
-  //     gap: 35px;
-  //   }
-  //   .navigation__button {
-  //     font-size: 14px;
-  //   }
-  //   .button-yellow {
-  //     font-size: 14px;
-  //     padding: 8px 20px;
-  //   }
+  .header__navigation {
+    visibility: visible;
+    pointer-events: auto;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: none;
+  }
 
-  //   //   Оформлення секції Герой
-  //   .hero__content {
-  //     display: flex;
-  //   }
-  //   .hero__image {
-  //     width: 309px;
-  //     height: 337px;
-  //     margin-left: auto;
-  //     margin-right: auto;
-  //   }
+  .navigation__list {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .navigation__button {
+    width: auto;
+    height: auto;
 
-  //   .hero__title {
-  //     font-family: Cormorant, serif;
-  //     font-size: 40px;
-  //     line-height: 1;
-  //     letter-spacing: 0.01em;
-  //     margin-bottom: 20px;
-  //   }
-  //   .hero__wrap {
-  //     padding: 30px 50px;
-  //   }
+    font-size: 16px;
+    color: $first-color;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  .button-yellow {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
 
-  //   .hero__article {
-  //     font-size: 16px;
-  //     margin-bottom: 20px;
-  //   }
+  //   Оформлення секції Герой
+  .hero__image {
+    width: 422px;
+    height: 450px;
+  }
 
-  //   .hero__button {
-  //     font-size: 14px;
-  //   }
+  .hero__wrap {
+    padding: 50px 55px;
+  }
 
-  //   //   Оформлення секції Особливості
-  //   .features {
-  //     padding-top: 40px;
-  //     padding-bottom: 40px;
-  //   }
-  //   .features__list {
-  //     flex-wrap: nowrap;
-  //     margin-top: 0;
-  //     margin-left: 0;
-  //   }
-  //   .features__item {
-  //     margin-top: 0;
-  //     margin-left: 0;
-  //   }
-  //   .features__item:not(:last-child) {
-  //     margin-right: 14px;
-  //   }
+  .hero__title {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
 
-  //   //   Оформлення секції Дерева
+  .hero__article {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .bauble__image {
+    width: 65px;
+    height: 79px;
+    margin-bottom: 9px;
+  }
+  .hero__button {
+    font-size: 16px;
+  }
 
-  //   .trees__item {
-  //     display: flex;
-  //     flex-direction: row-reverse;
-  //     align-items: center;
-  //     padding: 50px 39px;
-  //     gap: 30px;
-  //   }
-  //   .trees__item:nth-child(2) {
-  //     flex-direction: row;
-  //   }
+  //   Оформлення секції Особливості
 
-  //   .trees__wrap {
-  //     margin-top: 0;
-  //   }
-  //   .trees__title {
-  //     margin-bottom: 20px;
-  //     font-size: 40px;
-  //   }
-  //   .trees__article {
-  //     margin-bottom: 30px;
-  //     font-size: 14px;
-  //   }
-  //   .trees__description {
-  //     margin-bottom: 40px;
-  //     font-size: 16px;
-  //   }
-  //   .trees__button {
-  //     margin-right: 20px;
-  //     padding: 8px 20px;
-  //     font-size: 14px;
-  //   }
+  .features__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .features__icon {
+    width: 80px;
+    height: 80px;
+  }
+  .features__article {
+    font-size: 16px;
+  }
+
+  //   Оформлення секції Дерева
+
+  .trees__item {
+    padding: 60px 42px;
+    gap: 100px;
+  }
+  .trees__image {
+    height: 432px;
+  }
+  .trees__title {
+    font-size: 50px;
+  }
+  .trees__article {
+    font-size: 16px;
+  }
+  .trees__description {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  .trees__button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  .trees__button-transparent {
+    margin-left: 25px;
+  }
 
   //   //   Оформлення секції Оплати
   //   .payment {

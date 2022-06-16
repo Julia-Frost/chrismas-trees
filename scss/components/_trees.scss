@@ -40,7 +40,6 @@
   line-height: 1.4;
 }
 .trees__button {
-  margin-right: 20px;
   padding: 5px 14px;
   font-weight: 700;
   font-size: 12px;
@@ -49,6 +48,7 @@
   border: 1px solid $third-color;
 }
 .trees__button-transparent {
+  margin-left: 20px;
   background-color: transparent;
   border: 1px solid $third-color;
 }
