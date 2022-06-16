@@ -409,7 +409,7 @@ p {
 }
 
 .payment__item {
-  max-width: 207px;
+  width: 207px;
 }
 
 .payment__item:not(:last-child) {
@@ -447,7 +447,7 @@ p {
 
 .payment__icon-visa {
   width: 46px;
-  height: 15;
+  height: 15px;
 }
 
 .payment__icon-mastercard {
@@ -876,5 +876,99 @@ p {
 
   .trees__button-transparent {
     margin-left: 25px;
+  }
+
+  .payment__title {
+    font-size: 50px;
+  }
+
+  .payment__item {
+    width: 300px;
+  }
+
+  .payment__wrap {
+    height: 106px;
+  }
+
+  .payment__text {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .payment__article {
+    font-size: 16px;
+  }
+
+  .payment__icon:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .payment__icon-visa {
+    width: 67px;
+    height: 22px;
+  }
+
+  .payment__icon-mastercard {
+    width: 35px;
+    height: 28px;
+  }
+
+  .payment__icon-logo {
+    width: 115px;
+    height: 55px;
+  }
+
+  .payment__icon-bank {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer {
+    padding-top: 57px;
+    padding-bottom: 40px;
+    font-size: 14px;
+  }
+
+  .footer__list {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 41px 22px;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .address__link {
+    font-size: 16px;
+  }
+
+  .social__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .personal__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .policy__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .design__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
