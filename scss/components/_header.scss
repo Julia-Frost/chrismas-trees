@@ -33,6 +33,14 @@
   }
 }
 
+.icon__menu.is-open {
+  display: none;
+}
+
+.icon__cross.is-open {
+  display: block;
+}
+
 .logo {
   width: 73px;
   height: 35px;
@@ -41,20 +49,22 @@
 .header__navigation {
   visibility: hidden;
   pointer-events: none;
-
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: 69px;
   left: 0;
-  padding: 20px 10px;
+  padding: 0 10px 20px 10px;
   background-color: $second-color;
-
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: translateY(-100%);
+  transition: transform 500ms linear, visibility 500ms linear;
 }
 
 .header__navigation.is-open {
   visibility: visible;
   pointer-events: auto;
+  transform: translateY(0);
 }
 .navigation__list {
   display: flex;

@@ -138,6 +138,14 @@ p {
   display: none;
 }
 
+.icon__menu.is-open {
+  display: none;
+}
+
+.icon__cross.is-open {
+  display: block;
+}
+
 .logo {
   width: 73px;
   height: 35px;
@@ -148,16 +156,25 @@ p {
   pointer-events: none;
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: 69px;
   left: 0;
-  padding: 20px 10px;
+  padding: 0 10px 20px 10px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: visibility 500ms linear, -webkit-transform 500ms linear;
+  transition: visibility 500ms linear, -webkit-transform 500ms linear;
+  transition: transform 500ms linear, visibility 500ms linear;
+  transition: transform 500ms linear, visibility 500ms linear, -webkit-transform 500ms linear;
 }
 
 .header__navigation.is-open {
   visibility: visible;
   pointer-events: auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .navigation__list {
@@ -512,8 +529,8 @@ p {
   }
 
   .header__navigation {
-    top: 75px;
-    padding: 30px 39px;
+    top: 94px;
+    padding: 0 39px 31px;
   }
 
   .navigation__list {
