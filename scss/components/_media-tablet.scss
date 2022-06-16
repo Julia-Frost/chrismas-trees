@@ -20,7 +20,7 @@
 
   .header__navigation {
     top: 94px;
-    padding: 0 39px 31px;
+    padding: 0 0 31px;
   }
   .navigation__list {
     gap: 35px;
@@ -86,15 +86,20 @@
 
   .trees__item {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    justify-content: center;
     padding: 50px 39px;
-    gap: 30px;
-  }
-  .trees__item:nth-child(2) {
-    flex-direction: row;
   }
 
+  .trees__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    max-width: 768px;
+  }
+  .trees__content-reverse {
+    flex-direction: row;
+  }
   .trees__wrap {
     margin-top: 0;
   }

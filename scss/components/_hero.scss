@@ -4,7 +4,6 @@
 
 .hero__image {
   margin-left: auto;
-  margin-right: auto;
 }
 
 .hero__wrap {
@@ -17,12 +16,14 @@
   line-height: 1;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .hero__article {
   font-size: 14px;
   line-height: 1.4;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .hero__button {

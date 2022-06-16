@@ -90,8 +90,10 @@
   //   Оформлення секції Дерева
 
   .trees__item {
-    padding: 60px 42px;
-    gap: 100px;
+    padding: 60px 39px;
+  }
+  .trees__content {
+    max-width: 1024px;
   }
   .trees__image {
     height: 432px;
@@ -187,5 +189,203 @@
 
   .design__item:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  //  Оформлення секції Хедер
+  .header__announce {
+    font-size: 20px;
+  }
+  .logo {
+    width: 164px;
+    height: 76px;
+  }
+
+  .header__navigation {
+    position: absolute;
+    top: 80px;
+  }
+  .navigation__list {
+    gap: 50px;
+  }
+  .navigation__button {
+    font-size: 18px;
+  }
+  .button-yellow {
+    font-size: 18px;
+    padding: 14px 36px;
+  }
+
+  //   Оформлення секції Герой
+  .hero__image {
+    width: 705px;
+    height: 769px;
+  }
+
+  .hero__wrap {
+    padding: 70px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  .hero__article {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+  .bauble__image {
+    width: 113px;
+    height: 139px;
+    margin-bottom: 13px;
+  }
+  .hero__button {
+    font-size: 16px;
+  }
+
+  //   Оформлення секції Особливості
+
+  .features__item:not(:last-child) {
+    margin-right: 80px;
+  }
+  .features__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .features__article {
+    font-size: 18px;
+  }
+
+  //   Оформлення секції Дерева
+
+  .trees__item {
+    padding: 80px 39px;
+  }
+  .trees__content {
+    max-width: 1200px;
+    gap: 100px;
+  }
+  .trees__image {
+    height: 590px;
+  }
+  .trees__title {
+    font-size: 70px;
+  }
+  .trees__article {
+    font-size: 18px;
+  }
+  .trees__description {
+    margin-bottom: 70px;
+    font-size: 24px;
+  }
+  .trees__button {
+    padding: 14px 36px;
+    font-size: 18px;
+  }
+  .trees__button-transparent {
+    margin-left: 36px;
+  }
+
+  //   Оформлення секції Оплати
+  .payment {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .payment__title {
+    font-size: 70px;
+    margin-bottom: 48px;
+  }
+  .payment__item {
+    width: 350px;
+  }
+  .payment__wrap {
+    height: 146px;
+  }
+  .payment__text {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .payment__article {
+    font-size: 18px;
+  }
+  .payment__icon:not(:last-child) {
+    margin-right: 16px;
+  }
+  .payment__icon-visa {
+    width: 91px;
+    height: 30px;
+  }
+  .payment__icon-mastercard {
+    width: 50px;
+    height: 40px;
+  }
+
+  .payment__icon-logo {
+    width: 164px;
+    height: 76px;
+  }
+  .payment__icon-bank {
+    width: 75px;
+    height: 75px;
+  }
+
+  //   Оформлення секції Футер
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 107px;
+    font-size: 18px;
+  }
+  .footer__list {
+    gap: 68px 25px;
+  }
+
+  .address__link {
+    font-size: 24px;
+  }
+
+  .social__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .address__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .social__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .personal__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .policy__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .design__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  //   Оформлення секції Герой
+
+  .hero__wrap {
+    padding: 120px 110px;
+  }
+
+  .hero__title {
+    font-size: 70px;
+  }
+
+  //   Оформлення секції Особливості
+
+  .features__item:not(:last-child) {
+    margin-right: 115px;
+  }
+  .payment__item {
+    width: 400px;
   }
 }

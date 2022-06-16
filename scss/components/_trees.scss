@@ -1,6 +1,11 @@
 .trees__item {
   padding: 30px 10px;
 }
+.trees__content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 480px;
+}
 
 .trees__item:first-child {
   background-color: $green-second;
