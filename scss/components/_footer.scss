@@ -17,6 +17,13 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.4;
+  transition: color $animation;
+}
+
+.address__link:hover,
+.address__link:focus,
+.address__link:active {
+  color: $third-color;
 }
 
 .social {
@@ -30,6 +37,13 @@
 .social__icon {
   width: 24px;
   height: 24px;
+  border-radius: 100px;
+  fill: $second-color;
+  transition: fill $animation, transform $animation;
+}
+.social__icon:hover {
+  fill: $third-color;
+  transform: scale(1.2);
 }
 
 .personal__item:not(:last-child) {

@@ -29,7 +29,7 @@
             <use class="icon__cross" href="./img/icons.svg#cross" data-menu-cross></use>
           </svg>
         </button>
-        <a href="header__link">
+        <a href="" class="header__link">
           <svg class="header__logo logo">
             <use href="./img/icons.svg#logo"></use>
           </svg>
@@ -37,27 +37,27 @@
         <nav class="header__navigation navigation" data-menu>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="" class="navigation__link">
+              <a href="#fraser-tree" class="navigation__link">
                 <button class="navigation__button" type="button">Ялиця Фразера</button>
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="" class="navigation__link">
+              <a href="#common-tree" class="navigation__link">
                 <button class="navigation__button" type="button">Ялина звичайна</button>
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="" class="navigation__link">
+              <a href="#siberian-tree" class="navigation__link">
                 <button class="navigation__button" type="button">Сибірська ялиця</button>
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="" class="navigation__link"
-                ><button class="navigation__button" type="button">Як оплатити?</button></a
-              >
+              <a href="#payment" class="navigation__link">
+                <button class="navigation__button" type="button">Як оплатити?</button>
+              </a>
             </li>
           </ul>
         </nav>
@@ -113,7 +113,7 @@
       </section>
       <section class="trees">
         <ul class="trees__list">
-          <li class="trees__item">
+          <li class="trees__item" id="fraser-tree">
             <div class="trees__content">
               <img
                 class="trees__image"
@@ -130,13 +130,13 @@
                   М'який аромат, форма і здатність зберігати м'які голки протягом тривалого часу
                   роблять її одним з кращих дерев для різдва.
                 </p>
-                <button class="trees__button">Закрити</button>
+                <button class="trees__button">Замовити</button>
                 <button class="trees__button trees__button-transparent">Детальніше</button>
               </div>
             </div>
           </li>
 
-          <li class="trees__item">
+          <li class="trees__item" id="common-tree">
             <div class="trees__content trees__content-reverse">
               <img class="trees__image" src="./img/tree2-tablet.jpg" alt="Ялина звичайна" />
               <div class="trees__wrap">
@@ -149,13 +149,13 @@
                   Відмінною особливістю ялинки є виражений хвойний запах, короткі колючі голки та
                   порівняно менш пишна крона.
                 </p>
-                <button class="trees__button">Закрити</button>
+                <button class="trees__button">Замовити</button>
                 <button class="trees__button trees__button-transparent">Детальніше</button>
               </div>
             </div>
           </li>
 
-          <li class="trees__item">
+          <li class="trees__item" id="siberian-tree">
             <div class="trees__content">
               <img class="trees__image" src="./img/tree3-tablet.jpg" alt="Сибірська ялиця" />
               <div class="trees__wrap">
@@ -168,14 +168,14 @@
                   Хвоя Сибірської ялиці на відміну від ялинової більша, зеленіша, зовсім не колюча і
                   м'яка як трава
                 </p>
-                <button class="trees__button">Закрити</button>
+                <button class="trees__button">Замовити</button>
                 <button class="trees__button trees__button-transparent">Детальніше</button>
               </div>
             </div>
           </li>
         </ul>
       </section>
-      <section class="payment">
+      <section class="payment" id="payment">
         <div class="container">
           <h2 class="payment__title">Як можна оплатити</h2>
           <ul class="payment__list">
@@ -225,7 +225,7 @@
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="footer__link">
+            <a href="" class="footer__link">
               <svg class="footer__logo logo">
                 <use href="./img/icons.svg#footer-logo"></use>
               </svg>
@@ -250,7 +250,7 @@
           <li class="footer__item">
             <ul class="footer__social social">
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://www.whatsapp.com/" class="social__link" target="_blank">
                   <svg class="social__icon">
                     <use href="./img/icons.svg#whats-app"></use>
                   </svg>
@@ -258,7 +258,7 @@
               </li>
 
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://www.instagram.com/" class="social__link" target="_blank">
                   <svg class="social__icon">
                     <use href="./img/icons.svg#instagram"></use>
                   </svg>
@@ -266,7 +266,7 @@
               </li>
 
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://www.youtube.com/" class="social__link" target="_blank">
                   <svg class="social__icon">
                     <use href="./img/icons.svg#youtube"></use>
                   </svg>
@@ -274,7 +274,7 @@
               </li>
 
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://web.telegram.org" class="social__link" target="_blank">
                   <svg class="social__icon">
                     <use href="./img/icons.svg#telegram"></use>
                   </svg>
@@ -300,10 +300,10 @@
           <li class="footer__item">
             <ul class="footer__policy policy">
               <li class="policy__item">
-                <a class="policy__link">Політика конфіденційності</a>
+                <a href="" class="policy__link">Політика конфіденційності</a>
               </li>
               <li class="policy__item">
-                <a class="policy__link">Договір-оферта</a>
+                <a href="" class="policy__link">Договір-оферта</a>
               </li>
             </ul>
           </li>

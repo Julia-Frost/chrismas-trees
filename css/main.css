@@ -314,6 +314,19 @@ p {
   font-size: 12px;
   background-color: transparent;
   color: #ffffff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+.hero__button:hover,
+.hero__button:focus,
+.hero__button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .bauble__image {
@@ -430,13 +443,39 @@ p {
   font-size: 12px;
   background-color: #c0b487;
   border-radius: 6px;
-  border: 1px solid #c0b487;
+  outline: 2px solid #c0b487;
+  -webkit-transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, box-shadow 300ms linear;
+  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
+}
+
+.trees__button:hover {
+  color: #005844;
+  background-color: #ffffff;
+  outline: 2px solid #ffffff;
+}
+
+.trees__button:focus {
+  outline: 2px solid #262626;
+}
+
+.trees__button:active {
+  color: #ffffff;
+  background-color: #c0b487;
+  outline: 2px solid #c0b487;
+  -webkit-box-shadow: 0px 2px 6px rgba(45, 36, 1, 0.51);
+          box-shadow: 0px 2px 6px rgba(45, 36, 1, 0.51);
 }
 
 .trees__button-transparent {
   margin-left: 20px;
   background-color: transparent;
-  border: 1px solid #c0b487;
+  outline: 2px solid #c0b487;
+}
+
+.trees__button-transparent:focus {
+  outline: 2px solid #ffffff;
 }
 
 .payment {
@@ -545,6 +584,14 @@ p {
   font-style: normal;
   font-size: 14px;
   line-height: 1.4;
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+
+.address__link:hover,
+.address__link:focus,
+.address__link:active {
+  color: #c0b487;
 }
 
 .social {
@@ -560,6 +607,18 @@ p {
 .social__icon {
   width: 24px;
   height: 24px;
+  border-radius: 100px;
+  fill: #ffffff;
+  -webkit-transition: fill 300ms linear, -webkit-transform 300ms linear;
+  transition: fill 300ms linear, -webkit-transform 300ms linear;
+  transition: fill 300ms linear, transform 300ms linear;
+  transition: fill 300ms linear, transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+.social__icon:hover {
+  fill: #c0b487;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .personal__item:not(:last-child) {
@@ -971,6 +1030,7 @@ p {
 
   .trees__image {
     height: 432px;
+    max-width: 410px;
   }
 
   .trees__title {
@@ -1156,10 +1216,6 @@ p {
     gap: 100px;
   }
 
-  .trees__image {
-    height: 590px;
-  }
-
   .trees__title {
     font-size: 70px;
   }
@@ -1272,6 +1328,11 @@ p {
     margin-bottom: 20px;
   }
 }
+@media (min-width: 1400px) {
+  .hero__article {
+    margin-bottom: 100px;
+  }
+}
 @media (min-width: 1600px) {
   .hero__wrap {
     padding: 120px 110px;
@@ -1287,5 +1348,10 @@ p {
 
   .payment__item {
     width: 400px;
+  }
+
+  .trees__image {
+    height: 590px;
+    max-width: 570px;
   }
 }/*# sourceMappingURL=main.css.map */

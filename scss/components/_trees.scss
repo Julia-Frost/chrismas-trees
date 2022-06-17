@@ -50,10 +50,32 @@
   font-size: 12px;
   background-color: $third-color;
   border-radius: 6px;
-  border: 1px solid $third-color;
+  outline: 2px solid $third-color;
+
+  transition: background-color $animation, color $animation, outline $animation,
+    box-shadow $animation;
 }
+.trees__button:hover {
+  color: $green-third;
+  background-color: $second-color;
+  outline: 2px solid $second-color;
+}
+.trees__button:focus {
+  outline: 2px solid $first-color;
+}
+.trees__button:active {
+  color: $second-color;
+  background-color: $third-color;
+  outline: 2px solid $third-color;
+  box-shadow: 0px 2px 6px rgba(45, 36, 1, 0.51);
+}
+
 .trees__button-transparent {
   margin-left: 20px;
   background-color: transparent;
-  border: 1px solid $third-color;
+  outline: 2px solid $third-color;
+}
+
+.trees__button-transparent:focus {
+  outline: 2px solid $second-color;
 }

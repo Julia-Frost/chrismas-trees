@@ -132,6 +132,7 @@
   }
   .trees__image {
     height: 432px;
+    max-width: 410px;
   }
   .trees__title {
     font-size: 50px;
@@ -301,9 +302,7 @@
     max-width: 1200px;
     gap: 100px;
   }
-  .trees__image {
-    height: 590px;
-  }
+
   .trees__title {
     font-size: 70px;
   }
@@ -403,6 +402,11 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .hero__article {
+    margin-bottom: 100px;
+  }
+}
 @media (min-width: 1600px) {
   //   Оформлення секції Герой
 
@@ -421,5 +425,10 @@
   }
   .payment__item {
     width: 400px;
+  }
+
+  .trees__image {
+    height: 590px;
+    max-width: 570px;
   }
 }
