@@ -41,6 +41,41 @@
     border: none;
     border-radius: 0;
   }
+
+  .navigation__button:hover {
+    color: $first-color;
+    background-color: transparent;
+    transform: scale(1.1);
+  }
+
+  .navigation__button:focus {
+    border: none;
+    color: $green-third;
+  }
+  .navigation__button:active {
+    color: $first-color;
+    background-color: transparent;
+    transform: scale(1.2);
+    box-shadow: none;
+  }
+
+  .navigation__button::after {
+    content: '';
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $green-third;
+    transform: scale(0);
+    transition: transform $animation;
+  }
+
+  .navigation__button:hover::after,
+  .navigation__button:active::after {
+    transform: scale(1);
+  }
+
   .button-yellow {
     font-size: 16px;
     padding: 12px 30px;

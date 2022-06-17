@@ -173,10 +173,10 @@ p {
   border-bottom-right-radius: 10px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: visibility 500ms linear, -webkit-transform 500ms linear;
-  transition: visibility 500ms linear, -webkit-transform 500ms linear;
-  transition: transform 500ms linear, visibility 500ms linear;
-  transition: transform 500ms linear, visibility 500ms linear, -webkit-transform 500ms linear;
+  -webkit-transition: visibility 300ms linear, -webkit-transform 300ms linear;
+  transition: visibility 300ms linear, -webkit-transform 300ms linear;
+  transition: transform 300ms linear, visibility 300ms linear;
+  transition: transform 300ms linear, visibility 300ms linear, -webkit-transform 300ms linear;
 }
 
 .header__navigation.is-open {
@@ -201,7 +201,12 @@ p {
   gap: 8px;
 }
 
+.navigation__link {
+  outline: none;
+}
+
 .navigation__button {
+  position: relative;
   width: 146px;
   height: 32px;
   font-size: 12px;
@@ -209,6 +214,33 @@ p {
   background-color: transparent;
   border: 1px solid #e5ab39;
   border-radius: 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 300ms linear, border 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
+  transition: background-color 300ms linear, border 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
+  transition: background-color 300ms linear, border 300ms linear, box-shadow 300ms linear, transform 300ms linear, color 300ms linear;
+  transition: background-color 300ms linear, border 300ms linear, box-shadow 300ms linear, transform 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
+}
+
+.navigation__button:hover {
+  background-color: #e5ab39;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navigation__button:focus {
+  border: 1px solid #005844;
+  color: #005844;
+}
+
+.navigation__button:active {
+  background-color: #e5ab39;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button-yellow {
@@ -818,6 +850,49 @@ p {
     background-color: transparent;
     border: none;
     border-radius: 0;
+  }
+
+  .navigation__button:hover {
+    color: #262626;
+    background-color: transparent;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .navigation__button:focus {
+    border: none;
+    color: #005844;
+  }
+
+  .navigation__button:active {
+    color: #262626;
+    background-color: transparent;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .navigation__button::after {
+    content: "";
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #005844;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear;
+  }
+
+  .navigation__button:hover::after,
+.navigation__button:active::after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   .button-yellow {
