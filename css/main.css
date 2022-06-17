@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -173,10 +174,10 @@ p {
   border-bottom-right-radius: 10px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: visibility 300ms linear, -webkit-transform 300ms linear;
-  transition: visibility 300ms linear, -webkit-transform 300ms linear;
-  transition: transform 300ms linear, visibility 300ms linear;
-  transition: transform 300ms linear, visibility 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: visibility 250ms linear, -webkit-transform 250ms linear;
+  transition: visibility 250ms linear, -webkit-transform 250ms linear;
+  transition: transform 250ms linear, visibility 250ms linear;
+  transition: transform 250ms linear, visibility 250ms linear, -webkit-transform 250ms linear;
 }
 
 .header__navigation.is-open {
@@ -216,10 +217,10 @@ p {
   border-radius: 20px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: background-color 300ms linear, border 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
-  transition: background-color 300ms linear, border 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
-  transition: background-color 300ms linear, border 300ms linear, box-shadow 300ms linear, transform 300ms linear, color 300ms linear;
-  transition: background-color 300ms linear, border 300ms linear, box-shadow 300ms linear, transform 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: background-color 250ms linear, border 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-transform 250ms linear;
+  transition: background-color 250ms linear, border 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-transform 250ms linear;
+  transition: background-color 250ms linear, border 250ms linear, box-shadow 250ms linear, transform 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, border 250ms linear, box-shadow 250ms linear, transform 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-transform 250ms linear;
 }
 
 .navigation__button:hover {
@@ -250,10 +251,10 @@ p {
   color: #ffffff;
   background-color: #e5ab39;
   border-radius: 6px;
-  -webkit-transition: background-color 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear;
-  transition: background-color 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear;
-  transition: background-color 300ms linear, box-shadow 300ms linear, color 300ms linear;
-  transition: background-color 300ms linear, box-shadow 300ms linear, color 300ms linear, -webkit-box-shadow 300ms linear;
+  -webkit-transition: background-color 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: background-color 250ms linear, box-shadow 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, box-shadow 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear;
 }
 
 .button-yellow:hover {
@@ -316,10 +317,10 @@ p {
   color: #ffffff;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 300ms linear;
-  transition: -webkit-transform 300ms linear;
-  transition: transform 300ms linear;
-  transition: transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .hero__button:hover,
@@ -444,10 +445,10 @@ p {
   background-color: #c0b487;
   border-radius: 6px;
   outline: 2px solid #c0b487;
-  -webkit-transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, -webkit-box-shadow 300ms linear;
-  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, -webkit-box-shadow 300ms linear;
-  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, box-shadow 300ms linear;
-  transition: background-color 300ms linear, color 300ms linear, outline 300ms linear, box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
+  -webkit-transition: background-color 250ms linear, color 250ms linear, outline 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, outline 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, outline 250ms linear, box-shadow 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, outline 250ms linear, box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
 }
 
 .trees__button:hover {
@@ -584,8 +585,8 @@ p {
   font-style: normal;
   font-size: 14px;
   line-height: 1.4;
-  -webkit-transition: color 300ms linear;
-  transition: color 300ms linear;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .address__link:hover,
@@ -609,10 +610,10 @@ p {
   height: 24px;
   border-radius: 100px;
   fill: #ffffff;
-  -webkit-transition: fill 300ms linear, -webkit-transform 300ms linear;
-  transition: fill 300ms linear, -webkit-transform 300ms linear;
-  transition: fill 300ms linear, transform 300ms linear;
-  transition: fill 300ms linear, transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: fill 250ms linear, -webkit-transform 250ms linear;
+  transition: fill 250ms linear, -webkit-transform 250ms linear;
+  transition: fill 250ms linear, transform 250ms linear;
+  transition: fill 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .social__icon:hover {
@@ -961,10 +962,10 @@ p {
     background-color: #005844;
     -webkit-transform: scale(0);
             transform: scale(0);
-    -webkit-transition: -webkit-transform 300ms linear;
-    transition: -webkit-transform 300ms linear;
-    transition: transform 300ms linear;
-    transition: transform 300ms linear, -webkit-transform 300ms linear;
+    -webkit-transition: -webkit-transform 250ms linear;
+    transition: -webkit-transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear;
   }
 
   .navigation__button:hover::after,
@@ -1354,4 +1355,27 @@ p {
     height: 590px;
     max-width: 570px;
   }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  display: none;
+}
+
+.overlay-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

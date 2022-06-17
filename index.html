@@ -324,6 +324,29 @@
         </ul>
       </div>
     </footer>
+    <div class="overlay overlay-order">
+      <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="close-icon">
+            <use class="cross" href="./img/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Оформити замовлення</h2>
+        <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label class="modal__label">
+            <p class="modal__text">ПІБ</p>
+            <input class="modal__input" type="text" placeholder="Введіть ваші ПІБ" />
+          </label>
+          <label class="modal__label">
+            <p class="modal__text">Телефон</p>
+            <input class="modal__input" type="tel" placeholder="Введіть ваш номер телефону" />
+          </label>
+          <input class="modal__order" type="hidden" name="order" />
+          <button class="modal__button" type="submit">Замовити дзвінок</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay overlay-consultation"></div>
     <script src="./js/burger.js"></script>
   </body>
 </html>
