@@ -15,9 +15,8 @@
   .header__navigation {
     visibility: visible;
     pointer-events: auto;
-    position: sticky;
-    top: 100%;
-    width: 100%;
+    position: static;
+    align-self: flex-end;
     padding: 0;
     background-color: transparent;
     border-bottom-left-radius: 0;
@@ -53,7 +52,8 @@
     color: $green-third;
   }
   .navigation__button:active {
-    color: $first-color;
+    outline: none;
+    color: $green-third;
     background-color: transparent;
     transform: scale(1.2);
     box-shadow: none;
@@ -236,11 +236,10 @@
     width: 164px;
     height: 76px;
   }
-
   .header__navigation {
-    position: absolute;
-    top: 80px;
+    padding: 0 0 4px;
   }
+
   .navigation__list {
     gap: 50px;
   }

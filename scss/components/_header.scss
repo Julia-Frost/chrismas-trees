@@ -53,7 +53,7 @@
   width: 100%;
   top: 69px;
   left: 0;
-  padding: 20px;
+  padding: 20px 10px;
   background-color: $second-color;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -117,4 +117,17 @@
   color: $second-color;
   background-color: $fourth-color;
   border-radius: 6px;
+  transition: background-color $animation, box-shadow $animation, color $animation;
+}
+
+.button-yellow:hover {
+  background-color: $green-third;
+}
+
+.button-yellow:focus {
+  outline: 2px solid $first-color;
+}
+.button-yellow:active {
+  background-color: $green-third;
+  box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36);
 }
