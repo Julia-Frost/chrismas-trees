@@ -1364,6 +1364,9 @@ p {
   right: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1371,11 +1374,65 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  display: none;
 }
 
 .overlay-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal {
+  position: relative;
+  padding: 30px 15px;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #646464;
+  border-radius: 14px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.modal__title {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #00654e;
+  margin-bottom: 15px;
+}
+
+.modal__label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 12px 10px;
+  width: 100%;
+  color: #262626;
+  border: 1px solid #afafaf;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.modal__input {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.modal__input:focus {
+  outline: 1px solid #afafaf;
+  outline-offset: 3px;
 }/*# sourceMappingURL=main.css.map */
