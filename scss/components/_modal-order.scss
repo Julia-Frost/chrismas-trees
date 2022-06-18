@@ -22,8 +22,8 @@
 
 .modal {
   position: relative;
-  padding: 30px 15px;
-  width: 300px;
+  padding: 40px 15px;
+  width: 400px;
   background-color: $second-color;
   border: 1px solid #646464;
   border-radius: 14px;
@@ -34,12 +34,20 @@
   top: 15px;
   right: 15px;
   background-color: transparent;
+  border: none;
 }
 
 .close-icon {
   width: 24px;
   height: 24px;
+  fill: $green-first;
+  transition: fill $animation;
 }
+.close-icon:hover,
+.close-icon:focus {
+  fill: $first-color;
+}
+
 .modal__title {
   font-size: 16px;
   line-height: 1.4;
@@ -48,10 +56,14 @@
   margin-bottom: 15px;
 }
 
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__label {
   display: inline-block;
-  margin-bottom: 15px;
-  padding: 12px 10px;
+  padding: 12px 10px 16px;
   width: 100%;
 
   color: $first-color;
@@ -61,6 +73,9 @@
   font-weight: 700;
   font-size: 12px;
 }
+.modal__label:first-child {
+  margin-bottom: 15px;
+}
 
 .modal__input {
   width: 100%;
@@ -68,6 +83,7 @@
 
   border: none;
   color: #afafaf;
+  opacity: 0.7;
 
   font-weight: 400;
   font-size: 12px;
@@ -75,5 +91,74 @@
 
 .modal__input:focus {
   outline: 1px solid #afafaf;
-  outline-offset: 3px;
+  outline-offset: 5px;
+  color: $first-color;
+  opacity: 0.9;
+}
+
+.modal__button {
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 40px 80px;
+    width: 600px;
+  }
+  .modal__title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .modal__label {
+    padding: 12px 15px 20px;
+    font-size: 14px;
+  }
+
+  .modal__input {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .modal__button {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .modal {
+    padding: 50px 100px;
+    width: 746px;
+  }
+  .modal__title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .modal__label {
+    padding: 12px 15px 31px;
+    font-size: 18px;
+  }
+  .modal__label:first-child {
+    margin-bottom: 20px;
+  }
+  .modal__input {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .modal__button {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    padding: 60px 85px;
+    width: 950px;
+  }
+  .modal__title {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+  .modal__button {
+    margin-top: 60px;
+  }
 }
