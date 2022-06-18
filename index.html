@@ -61,7 +61,9 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button button-yellow" type="button">Консультація</button>
+        <button class="header__button button-yellow button-consultation" type="button">
+          Консультація
+        </button>
       </div>
     </header>
     <main>
@@ -71,7 +73,7 @@
           <div class="hero__wrap">
             <h1 class="hero__title">Зустрічай Новий Рік з прекрасною живою ялинкою!</h1>
             <p class="hero__article">У нас тільки свіжі та найпухнастіші ялинки</p>
-            <button class="hero__button">
+            <button class="hero__button button-order" data-order="Не визначений товар">
               <img class="bauble__image" src="./img/bauble.png" alt="замовити" width="41" />
               Замовити
             </button>
@@ -130,8 +132,15 @@
                   М'який аромат, форма і здатність зберігати м'які голки протягом тривалого часу
                   роблять її одним з кращих дерев для різдва.
                 </p>
-                <button class="trees__button">Замовити</button>
-                <button class="trees__button trees__button-transparent">Детальніше</button>
+                <button class="trees__button button-order" data-order="Ялиця Фразера">
+                  Замовити
+                </button>
+                <button
+                  class="trees__button trees__button-transparent button-consultation"
+                  data-order="Ялиця Фразера"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </li>
@@ -149,8 +158,15 @@
                   Відмінною особливістю ялинки є виражений хвойний запах, короткі колючі голки та
                   порівняно менш пишна крона.
                 </p>
-                <button class="trees__button">Замовити</button>
-                <button class="trees__button trees__button-transparent">Детальніше</button>
+                <button class="trees__button button-order" data-order="Ялина звичайна">
+                  Замовити
+                </button>
+                <button
+                  class="trees__button trees__button-transparent button-consultation"
+                  data-order="Ялина звичайна"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </li>
@@ -168,8 +184,15 @@
                   Хвоя Сибірської ялиці на відміну від ялинової більша, зеленіша, зовсім не колюча і
                   м'яка як трава
                 </p>
-                <button class="trees__button">Замовити</button>
-                <button class="trees__button trees__button-transparent">Детальніше</button>
+                <button class="trees__button button-order" data-order="Сибірська ялиця">
+                  Замовити
+                </button>
+                <button
+                  class="trees__button trees__button-transparent button-consultation"
+                  data-order="Сибірська ялиця"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </li>
@@ -336,19 +359,60 @@
           <label class="modal__label"
             >ПІБ
 
-            <input class="modal__input" type="text" placeholder="Введіть ваші ПІБ" />
+            <input class="modal__input" name="bio" type="text" placeholder="Введіть ваші ПІБ" />
           </label>
           <label class="modal__label"
             >Телефон
 
-            <input class="modal__input" type="tel" placeholder="Введіть ваш номер телефону" />
+            <input
+              class="modal__input"
+              name="tel"
+              type="tel"
+              placeholder="Введіть ваш номер телефону"
+            />
           </label>
           <input class="modal__order" type="hidden" name="order" />
           <button class="modal__button button-yellow" type="submit">Замовити дзвінок</button>
         </form>
       </div>
     </div>
-    <!-- <div class="overlay overlay-consultation"></div> -->
+    <div class="overlay overlay-consultation">
+      <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="close-icon">
+            <use class="cross" href="./img/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити консультацію</h2>
+        <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label class="modal__label"
+            >ПІБ
+
+            <input
+              class="modal__input"
+              required
+              name="bio"
+              type="text"
+              placeholder="Введіть ваші ПІБ"
+            />
+          </label>
+          <label class="modal__label"
+            >Телефон
+
+            <input
+              class="modal__input"
+              required
+              name="tel"
+              type="tel"
+              placeholder="Введіть ваш номер телефону"
+            />
+          </label>
+          <input class="modal__order" type="hidden" name="order" />
+          <button class="modal__button button-yellow" type="submit">Замовити дзвінок</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/burger.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

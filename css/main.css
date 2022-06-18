@@ -1369,9 +1369,7 @@ p {
   right: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1379,6 +1377,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  overflow-y: auto;
 }
 
 .overlay-active {
@@ -1444,10 +1443,16 @@ p {
   border-radius: 6px;
   font-weight: 700;
   font-size: 12px;
+  -webkit-transition: border 250ms linear;
+  transition: border 250ms linear;
 }
 
 .modal__label:first-child {
   margin-bottom: 15px;
+}
+
+.modal__label:hover {
+  border: 1px solid #262626;
 }
 
 .modal__input {
@@ -1458,13 +1463,6 @@ p {
   opacity: 0.7;
   font-weight: 400;
   font-size: 12px;
-}
-
-.modal__input:focus {
-  outline: 1px solid #afafaf;
-  outline-offset: 5px;
-  color: #262626;
-  opacity: 0.9;
 }
 
 .modal__button {

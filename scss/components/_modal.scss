@@ -6,14 +6,12 @@
   right: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
-
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
   padding: 10px;
-
-  // display: none;
+  overflow-y: auto;
 }
 
 .overlay-active {
@@ -28,6 +26,12 @@
   border: 1px solid #646464;
   border-radius: 14px;
 }
+
+// .overlay-active .modal {
+// transform: scale(0.8);
+// transition: transform $animation;
+//   transform: scale(1);
+// }
 
 .close-button {
   position: absolute;
@@ -72,9 +76,14 @@
 
   font-weight: 700;
   font-size: 12px;
+  transition: border $animation;
 }
 .modal__label:first-child {
   margin-bottom: 15px;
+}
+
+.modal__label:hover {
+  border: 1px solid $first-color;
 }
 
 .modal__input {
@@ -87,13 +96,6 @@
 
   font-weight: 400;
   font-size: 12px;
-}
-
-.modal__input:focus {
-  outline: 1px solid #afafaf;
-  outline-offset: 5px;
-  color: $first-color;
-  opacity: 0.9;
 }
 
 .modal__button {
