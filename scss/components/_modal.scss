@@ -6,16 +6,27 @@
   right: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 
   padding: 10px;
   overflow-y: auto;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity $animation, visibility $animation;
 }
 
-.overlay-active {
-  display: flex;
+.overlay.overlay-active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+
+  & .modal {
+    transform: scale(1);
+  }
 }
 
 .modal {
@@ -25,13 +36,9 @@
   background-color: $second-color;
   border: 1px solid #646464;
   border-radius: 14px;
+  transform: scale(0.8);
+  transition: transform $animation;
 }
-
-// .overlay-active .modal {
-// transform: scale(0.8);
-// transition: transform $animation;
-//   transform: scale(1);
-// }
 
 .close-button {
   position: absolute;

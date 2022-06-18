@@ -1369,7 +1369,9 @@ p {
   right: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1378,12 +1380,21 @@ p {
           align-items: center;
   padding: 10px;
   overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.overlay-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.overlay.overlay-active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.overlay.overlay-active .modal {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .modal {
@@ -1393,6 +1404,12 @@ p {
   background-color: #ffffff;
   border: 1px solid #646464;
   border-radius: 14px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .close-button {
