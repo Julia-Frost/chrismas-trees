@@ -17,27 +17,16 @@
   pointer-events: none;
   visibility: hidden;
   transition: opacity $animation, visibility $animation;
-}
 
-.overlay.overlay-active {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
+  &.overlay-active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 
-  & .modal {
-    transform: scale(1);
+    & .modal {
+      transform: scale(1);
+    }
   }
-}
-
-.modal {
-  position: relative;
-  padding: 40px 15px;
-  width: 400px;
-  background-color: $second-color;
-  border: 1px solid #646464;
-  border-radius: 14px;
-  transform: scale(0.8);
-  transition: transform $animation;
 }
 
 .close-button {
@@ -53,121 +42,137 @@
   height: 24px;
   fill: $green-first;
   transition: fill $animation;
-}
-.close-icon:hover,
-.close-icon:focus {
-  fill: $first-color;
-}
 
-.modal__title {
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
-  color: $green-first;
-  margin-bottom: 15px;
+  &:hover,
+  &:focus {
+    fill: $first-color;
+  }
 }
 
-.modal__form {
-  display: flex;
-  flex-direction: column;
-}
+.modal {
+  position: relative;
+  padding: 40px 15px;
+  width: 400px;
+  background-color: $second-color;
+  border: 1px solid #646464;
+  border-radius: 14px;
+  transform: scale(0.8);
+  transition: transform $animation;
 
-.modal__label {
-  display: inline-block;
-  padding: 12px 10px 16px;
-  width: 100%;
+  &__title {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: $green-first;
+    margin-bottom: 15px;
+  }
 
-  color: $first-color;
-  border: 1px solid #afafaf;
-  border-radius: 6px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
 
-  font-weight: 700;
-  font-size: 12px;
-  transition: border $animation;
-}
-.modal__label:first-child {
-  margin-bottom: 15px;
-}
+  &__label {
+    display: inline-block;
+    padding: 12px 10px 16px;
+    width: 100%;
 
-.modal__label:hover {
-  border: 1px solid $first-color;
-}
+    color: $first-color;
+    border: 1px solid #afafaf;
+    border-radius: 6px;
 
-.modal__input {
-  width: 100%;
-  margin-top: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: border $animation;
+    &:first-child {
+      margin-bottom: 15px;
+    }
 
-  border: none;
-  color: #afafaf;
-  opacity: 0.7;
+    &:hover {
+      border: 1px solid $first-color;
+    }
+  }
 
-  font-weight: 400;
-  font-size: 12px;
-}
+  &__input {
+    width: 100%;
+    margin-top: 10px;
 
-.modal__button {
-  margin-top: 15px;
-  align-self: flex-end;
+    border: none;
+    color: #afafaf;
+    opacity: 0.7;
+
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  &__button {
+    margin-top: 15px;
+    align-self: flex-end;
+  }
 }
 
 @media (min-width: 768px) {
   .modal {
     padding: 40px 80px;
     width: 600px;
-  }
-  .modal__title {
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
 
-  .modal__label {
-    padding: 12px 15px 20px;
-    font-size: 14px;
-  }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
 
-  .modal__input {
-    margin-top: 15px;
-    font-size: 14px;
-  }
-  .modal__button {
-    margin-top: 25px;
+    &__label {
+      padding: 12px 15px 20px;
+      font-size: 14px;
+    }
+
+    &__input {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    &__button {
+      margin-top: 25px;
+    }
   }
 }
 @media (min-width: 1024px) {
   .modal {
     padding: 50px 100px;
     width: 746px;
-  }
-  .modal__title {
-    font-size: 22px;
-    margin-bottom: 40px;
-  }
 
-  .modal__label {
-    padding: 12px 15px 31px;
-    font-size: 18px;
-  }
-  .modal__label:first-child {
-    margin-bottom: 20px;
-  }
-  .modal__input {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  .modal__button {
-    margin-top: 40px;
+    &__title {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    &__label {
+      padding: 12px 15px 31px;
+      font-size: 18px;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__input {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    &__button {
+      margin-top: 40px;
+    }
   }
 }
 @media (min-width: 1200px) {
   .modal {
     padding: 60px 85px;
     width: 950px;
-  }
-  .modal__title {
-    font-size: 26px;
-    margin-bottom: 50px;
-  }
-  .modal__button {
-    margin-top: 60px;
+
+    &__title {
+      font-size: 26px;
+      margin-bottom: 50px;
+    }
+    &__button {
+      margin-top: 60px;
+    }
   }
 }

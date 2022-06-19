@@ -2,64 +2,65 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $third-color;
-}
 
-.payment__title {
-  margin-bottom: 20px;
-  font-family: 'Cormorant';
-  font-size: 28px;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-}
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'Cormorant';
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
 
-.payment__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.payment__item {
-  width: 207px;
-}
-.payment__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-.payment__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $second-color;
-  height: 73px;
-}
+  &__item {
+    width: 207px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
-.payment__text {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-.payment__article {
-  font-size: 12px;
-}
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second-color;
+    height: 73px;
+  }
 
-.payment__icon:not(:last-child) {
-  margin-right: 11px;
-}
-.payment__icon-visa {
-  width: 46px;
-  height: 15px;
-}
-.payment__icon-mastercard {
-  width: 24px;
-  height: 19px;
-}
-.payment__icon-logo {
-  width: 73px;
-  height: 35px;
-}
-.payment__icon-bank {
-  width: 35px;
-  height: 35px;
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  &__article {
+    font-size: 12px;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 11px;
+  }
+  &__icon-visa {
+    width: 46px;
+    height: 15px;
+  }
+  &__icon-mastercard {
+    width: 24px;
+    height: 19px;
+  }
+  &__icon-logo {
+    width: 73px;
+    height: 35px;
+  }
+  &__icon-bank {
+    width: 35px;
+    height: 35px;
+  }
 }

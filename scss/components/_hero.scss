@@ -1,48 +1,48 @@
 .hero {
   background-color: $green-third;
-}
 
-.hero__image {
-  margin-left: auto;
-}
+  &__image {
+    margin-left: auto;
+  }
 
-.hero__wrap {
-  padding: 20px 10px;
-}
+  &__wrap {
+    padding: 20px 10px;
+  }
 
-.hero__title {
-  font-family: Cormorant, serif;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  margin-bottom: 16px;
-  text-align: center;
-}
+  &__title {
+    font-family: Cormorant, serif;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    margin-bottom: 16px;
+    text-align: center;
+  }
 
-.hero__article {
-  font-size: 14px;
-  line-height: 1.4;
-  margin-bottom: 16px;
-  text-align: center;
-}
+  &__article {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    text-align: center;
+  }
 
-.hero__button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 12px;
-  background-color: transparent;
-  color: $second-color;
-  transform: scale(1);
-  transition: transform $animation;
-}
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    background-color: transparent;
+    color: $second-color;
+    transform: scale(1);
+    transition: transform $animation;
 
-.hero__button:hover,
-.hero__button:focus,
-.hero__button:active {
-  transform: scale(1.2);
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.2);
+    }
+  }
 }
 .bauble__image {
   width: 41px;

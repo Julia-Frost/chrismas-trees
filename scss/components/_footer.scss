@@ -3,10 +3,10 @@
   padding-bottom: 24px;
   background-color: $first-color;
   font-size: 12px;
-}
 
-.footer__item:not(:last-child) {
-  margin-bottom: 30px;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -18,32 +18,31 @@
   font-size: 14px;
   line-height: 1.4;
   transition: color $animation;
-}
 
-.address__link:hover,
-.address__link:focus,
-.address__link:active {
-  color: $third-color;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $third-color;
+  }
 }
 
 .social {
   display: flex;
-}
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social__icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 100px;
-  fill: $second-color;
-  transition: fill $animation, transform $animation;
-}
-.social__icon:hover {
-  fill: $third-color;
-  transform: scale(1.2);
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    fill: $second-color;
+    transition: fill $animation, transform $animation;
+    &:hover {
+      fill: $third-color;
+      transform: scale(1.2);
+    }
+  }
 }
 
 .personal__item:not(:last-child) {

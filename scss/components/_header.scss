@@ -2,30 +2,51 @@
   background-color: $second-color;
   padding-top: 15px;
   padding-bottom: 15px;
-}
 
-.header__content {
-  position: relative;
+  &__content {
+    position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__menu {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-
-  & .icon__cross {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
 
-.header__burger {
-  fill: $green-first;
+  &__menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    & .icon__cross {
+      display: none;
+    }
+  }
+
+  &__burger {
+    fill: $green-first;
+  }
+  &__navigation {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    left: 0;
+    padding: 0 10px 20px;
+    background-color: $second-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transform: scale(0);
+    transition: transform $animation, visibility $animation;
+    &.is-open {
+      visibility: visible;
+      pointer-events: auto;
+
+      transform: scale(1);
+    }
+  }
 }
 
 .icon__menu.is-open {
@@ -41,26 +62,6 @@
   height: 35px;
 }
 
-.header__navigation {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  top: 69px;
-  left: 0;
-  padding: 20px 10px;
-  background-color: $second-color;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transform: translateY(-100%);
-  transition: transform $animation, visibility $animation;
-}
-
-.header__navigation.is-open {
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateY(0);
-}
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
@@ -85,23 +86,24 @@
   transform: scale(1);
   transition: background-color $animation, border $animation, box-shadow $animation,
     transform $animation, color $animation;
-}
 
-.navigation__button:hover {
-  background-color: $fourth-color;
-  color: $second-color;
-  transform: scale(1.1);
-}
+  &:hover {
+    background-color: $fourth-color;
+    color: $second-color;
+    transform: scale(1.1);
+  }
 
-.navigation__button:focus {
-  border: 1px solid $green-third;
-  color: $green-third;
-}
-.navigation__button:active {
-  background-color: $fourth-color;
-  color: $second-color;
-  transform: scale(1.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &:focus {
+    border: 1px solid $green-third;
+    color: $green-third;
+  }
+
+  &:active {
+    background-color: $fourth-color;
+    color: $second-color;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .button-yellow {
@@ -113,16 +115,16 @@
   background-color: $fourth-color;
   border-radius: 6px;
   transition: background-color $animation, box-shadow $animation, color $animation;
-}
 
-.button-yellow:hover {
-  background-color: $green-third;
-}
+  &:hover {
+    background-color: $green-third;
+  }
 
-.button-yellow:focus {
-  outline: 2px solid $first-color;
-}
-.button-yellow:active {
-  background-color: $green-third;
-  box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36);
+  &:focus {
+    outline: 2px solid $first-color;
+  }
+  &:active {
+    background-color: $green-third;
+    box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36);
+  }
 }

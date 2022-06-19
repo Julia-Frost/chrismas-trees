@@ -15,9 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.timer__count {
-  display: block;
+  &__count {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
