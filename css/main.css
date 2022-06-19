@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -105,19 +106,6 @@ p {
 
 .header {
   background-color: #ffffff;
-}
-
-.header__action {
-  background-color: #262626;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  padding: 20px;
-}
-
-.header__announce {
-  text-align: center;
-  font-weight: 700;
-  font-size: 12px;
 }
 
 .header__content {
@@ -639,15 +627,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  .header__announce {
-    font-size: 14px;
-  }
-
-  .header__content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   .header__burger {
     width: 28px;
     height: 28px;
@@ -885,15 +864,6 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .header__announce {
-    font-size: 16px;
-  }
-
-  .header__content {
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-
   .header__menu {
     display: none;
   }
@@ -1555,5 +1525,48 @@ p {
 
   .modal__button {
     margin-top: 60px;
+  }
+}
+.timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #262626;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer__count {
+  display: block;
+}
+
+/*background-color: var(--main-color); Убрать после отключения таймера в ball.css*/
+@media (min-width: 768px) {
+  .timer {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  .timer {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .timer {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
