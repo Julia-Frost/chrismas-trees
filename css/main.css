@@ -610,6 +610,10 @@ p {
     display: flex;
   }
 
+  .hero__wrap {
+    padding: 30px 20px 30px 50px;
+  }
+
   .hero__image {
     width: 309px;
     height: 337px;
@@ -618,10 +622,6 @@ p {
   .hero__title {
     font-size: 40px;
     margin-bottom: 20px;
-  }
-
-  .hero__wrap {
-    padding: 30px 50px;
   }
 
   .hero__article {
@@ -821,12 +821,12 @@ p {
     visibility: visible;
     pointer-events: auto;
     position: static;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
     padding: 0;
     background-color: transparent;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     -webkit-transition: none;
     transition: none;
   }
@@ -909,7 +909,7 @@ p {
   }
 
   .hero__wrap {
-    padding: 50px 55px;
+    padding: 50px 30px 50px 50px;
   }
 
   .hero__title {
@@ -1096,7 +1096,7 @@ p {
   }
 
   .hero__wrap {
-    padding: 70px;
+    padding: 60px 30px;
   }
 
   .hero__title {
@@ -1253,18 +1253,9 @@ p {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 1400px) {
-  .hero__article {
-    margin-bottom: 100px;
-  }
-}
 @media (min-width: 1600px) {
-  .hero__wrap {
-    padding: 120px 110px;
-  }
-
-  .hero__title {
-    font-size: 70px;
+  .hero__article {
+    margin-bottom: 70px;
   }
 
   .features__item:not(:last-child) {

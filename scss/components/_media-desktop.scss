@@ -7,7 +7,6 @@
     visibility: visible;
     pointer-events: auto;
     position: static;
-    align-self: flex-end;
     padding: 0;
     background-color: transparent;
     border-bottom-left-radius: 0;
@@ -81,7 +80,7 @@
   }
 
   .hero__wrap {
-    padding: 50px 55px;
+    padding: 50px 30px 50px 50px;
   }
 
   .hero__title {
@@ -252,7 +251,7 @@
   }
 
   .hero__wrap {
-    padding: 70px;
+    padding: 60px 30px;
   }
 
   .hero__title {
@@ -395,22 +394,11 @@
   }
 }
 
-@media (min-width: 1400px) {
-  .hero__article {
-    margin-bottom: 100px;
-  }
-}
 @media (min-width: 1600px) {
   //   Оформлення секції Герой
-
-  .hero__wrap {
-    padding: 120px 110px;
+  .hero__article {
+    margin-bottom: 70px;
   }
-
-  .hero__title {
-    font-size: 70px;
-  }
-
   //   Оформлення секції Особливості
 
   .features__item:not(:last-child) {

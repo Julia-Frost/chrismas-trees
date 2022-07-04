@@ -28,6 +28,10 @@
   .hero__content {
     display: flex;
   }
+
+  .hero__wrap {
+    padding: 30px 20px 30px 50px;
+  }
   .hero__image {
     width: 309px;
     height: 337px;
@@ -37,9 +41,6 @@
     font-size: 40px;
 
     margin-bottom: 20px;
-  }
-  .hero__wrap {
-    padding: 30px 50px;
   }
 
   .hero__article {
